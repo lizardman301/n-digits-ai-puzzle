@@ -28,7 +28,10 @@ int main(int argc, char* argv[]) {
 	cin >> n;
 	if (n == 6 || n < 5 || n > 10) {
 		// Gives a warning for the numbers that will have no solution.
+		int junk;
 		cout << "WARNING: Solution will not be found OR solution will not be valid (can't have two digits in a one digit spot)" << endl;
+		cout << "Enter any value to continue the search regardless." << endl;
+		cin >> junk;
 	}
 	
 	//initalize problem

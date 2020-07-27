@@ -140,7 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Agent.h" />
-    <ClInclude Include="ExploredSet.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="PriorityQueue.h" />
     <ClInclude Include="Problem.h" />
@@ -148,7 +147,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Agent.cpp" />
-    <ClCompile Include="ExploredSet.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="PriorityQueue.cpp" />
     <ClCompile Include="Problem.cpp" />
