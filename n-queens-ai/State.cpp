@@ -56,15 +56,7 @@ State::print() {
 
 bool
 State::validState() {
-	int lm = s[1] - '0'; //ez convert to int
-	int lc = s[2] - '0';
-	int rm = s[3] - '0';
-	int rc = s[4] - '0';
-
-	//greater than means the canibals can overpower the missionaries and thats no good
-	if (lm != 0 && lc > lm) return false;
-	if (rm != 0 && rc > rm) return false;
-
+	//UNUSED
 	return true;
 }
 
@@ -85,27 +77,10 @@ State::setMove(MoveType m) {
 
 std::string
 State::returnMove() {
+	// UNUSED
+
     std::string temp;
-    switch (cur_m) {
-    case None:
-        temp = "None";
-        break;
-	case Up:
-        temp = "Up";
-        break;
-    case Left:
-        temp = "Left";
-        break;
-    case Down:
-        temp = "Down";
-        break;
-    case Right:
-        temp = "Right";
-        break;
-	default:
-		temp = "STRT";
-		break;
-    }
+
 	return temp;
 }
 

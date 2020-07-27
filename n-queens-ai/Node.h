@@ -19,10 +19,10 @@ public:
     double getPCost() const;
     double getUCost() const;
 private:
-    Node* parent;
-    State name;   // the name is actually the "state"
-    int search_type;
-    double ucost;	// unit cost:  distance to parent
+    Node* parent; // used in tree based searches
+    State name;   
+    int search_type; // if we had multiple search types, it would use this to determine which one to do
+    double ucost;	// unit cost:  distance to parent UNUSED
     double pcost;	// total path cost: distance to root
     double hcost;
     double handpcost;
